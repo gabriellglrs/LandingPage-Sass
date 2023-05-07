@@ -14,8 +14,9 @@
     padding-left: $left;
     background-color: $bg-color;
     border-radius: 6px;
-    color: $color;
+    color: $purple;
     &:hover {
         background-color: $bghover;
+        color: $color;
     }
 }
