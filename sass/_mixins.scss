@@ -1,0 +1,21 @@
+@import "variables";
+
+@mixin responsivo($max-width) {
+    @media (max-width: $max-width) {
+        @content;
+    }
+}
+
+@mixin btn($top, $right, $bottom, $left, $bg-color, $color, $bghover) {
+    display: inline-block;
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+    background-color: $bg-color;
+    border-radius: 6px;
+    color: $color;
+    &:hover {
+        background-color: $bghover;
+    }
+}

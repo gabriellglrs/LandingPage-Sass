@@ -1,0 +1,44 @@
+$purple: #5f3ca1;
+$yellow: #ffbf00;
+$white: #ffffff;
+$gray1: #453f51;
+$gray2: #5e5570;
+
+.container {
+    width: 100%;
+    max-width: 1256px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.f48px {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 120%;
+    color: $white;
+}
+
+.f32px {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 130%;
+    color: $gray1;
+}
+
+.f18px {
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 22px;
+    color: $purple;
+}
+
+.f16px {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 21px;
+    color: $purple;
+}
