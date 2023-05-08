@@ -8,16 +8,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 50px 0px;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         .header-lista {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 55px;
+            gap: 5.5rem;
             .header-lista-flex {
                 display: flex;
                 align-items: center;
-                gap: 16px;
+                gap: 1.6rem;
                 img {
                     display: inline;
                 }
@@ -27,31 +28,47 @@
             }
         }
     }
+    // responsivo home
+    @include responsivo(650px) {
+        .header {
+            flex-direction: column;
+            .header-lista {
+                margin-top: 30px;
+                flex-wrap: wrap;
+                gap: 20px;
+                .header-lista-flex {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
     .section {
         display: flex;
         .section-box1 {
             h1 {
-                margin-bottom: 16px;
-                max-width: 550px;
+                margin-bottom: 1.6rem;
+                max-width: 55rem;
             }
             p {
                 color: $white;
                 font-weight: 400;
                 line-height: 150%;
-                margin-bottom: 32px;
-                max-width: 488px;
+                margin-bottom: 3.2rem;
+                max-width: 48.8rem;
             }
             .section-a {
-                margin-bottom: 86px;
+                margin-bottom: 8.6rem;
                 @include btn(16px, 50px, 16px, 50px, $yellow, $white, $gray1);
             }
             .section-flex {
                 a {
-                    max-width: 220px;
-                    padding: 20px 0px;
+                    max-width: 22rem;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
                     display: flex;
                     align-items: center;
-                    gap: 16px;
+                    gap: 1.6rem;
                     color: $white;
                     &:hover {
                         color: $yellow;
@@ -62,6 +79,61 @@
         .section-box2 {
             img {
                 margin-top: 70px;
+            }
+        }
+    }
+    // responsivo section
+    @include responsivo(800px) {
+        .section {
+            flex-direction: column;
+            .section-box1 {
+                .section-a {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    @include responsivo(600px) {
+        .section {
+            text-align: center;
+            .section-box1 {
+                h1 {
+                    text-align: center;
+                    margin-bottom: 2.4rem;
+                    font-size: 4.1rem;
+                }
+                p {
+                    text-align: center;
+                    display: inline-block;
+                }
+                .section-flex {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .section-box2 {
+                img {
+                    position: relative;
+                    left: -1.9rem;
+                }
+            }
+        }
+    }
+    @include responsivo(425px) {
+        .section {
+            .section-box1 {
+                h1 {
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+    @include responsivo(365px) {
+        .section {
+            .section-box1 {
+                h1 {
+                    font-size: 3.1rem;
+                }
             }
         }
     }
