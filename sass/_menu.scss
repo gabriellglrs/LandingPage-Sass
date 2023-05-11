@@ -1,0 +1,47 @@
+@import "mixins";
+@import "variables";
+
+.menu {
+    width: 100%;
+    .menu-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15rem;
+        margin-bottom: 9rem;
+        h1 {
+            max-width: 50rem;
+        }
+        h4 {
+            color: $gray2;
+        }
+    }
+
+    .menu-flex2 {
+        display: flex;
+        gap: 5rem;
+        .card {
+            h2 {
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+            }
+            h4 {
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 165%;
+                color: $gray2;
+            }
+        }
+        .card2 {
+            h2 {
+                margin-top: 0rem;
+            }
+        }
+        .card3 {
+            h2 {
+                margin-top: 0rem;
+            }
+        }
+    }
+}
